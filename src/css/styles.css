@@ -42,3 +42,85 @@
 .gallery-image:hover {
   transform: scale(1.03);
 }
+
+.simple-lightbox {
+  background-color: #363636;
+}
+
+.sl-overlay {
+  background-color: transparent;
+}
+
+.sl-image {
+  width: 1112px;
+  height: 640px;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 48px);
+  margin: auto;
+  object-fit: contain;
+}
+
+.sl-close {
+  color: #ffffff;
+  font-size: 24px;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0;
+}
+
+.sl-counter {
+  color: #ffffff;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-prev,
+.sl-next {
+  color: #ffffff;
+  font-size: 48px;
+  height: 100%;
+  width: 48px;
+  top: 0;
+  transform: none;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  line-height: 1;
+}
+
+.sl-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 15px;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  z-index: 10;
+}
+
+.sl-caption.caption-active {
+  opacity: 1;
+}
